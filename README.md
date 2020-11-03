@@ -24,8 +24,10 @@ Now that we have a CSR, instead of submitting it to a CA, we are going to sign i
 
 The command above generates a sec.crt certificate file that is self-signed, which also means that it has no root CA.
 
+Check out the full, interesting post from [Uday Hiwarale](https://medium.com/@thatisuday?source=post_page-----d5a6269fe29e--------------------------------) on Medium<sup>1</sup>
+
 ----------------------------------------------------------------  
-<br/><br/>
+<br />
 
 **Mapping the domain name to an IPV4 address**
 ----------------------------------------------------------------
@@ -41,3 +43,12 @@ and add the following at the end of the file:
     127.0.0.1 your-domain.com www.your-doimain.com
 
 (replacing the domain with the actual domain)
+
+----------------------------------------------------------------
+
+<br />
+
+**REFERENCES**
+----------------------------------------------------------------
+
+<sup>1</sup>: [A brief overview of the TCP/IP model, SSL/TLS/HTTPS protocols and SSL certificates](https://medium.com/jspoint/a-brief-overview-of-the-tcp-ip-model-ssl-tls-https-protocols-and-ssl-certificates-d5a6269fe29e)
