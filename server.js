@@ -1,6 +1,7 @@
 const fs = require('fs')
 const https = require('https')
 const express = require('express')
+const chalk = require('chalk')
 
 // import private key and public certificate
 const privateKey = fs.readFileSync('./sec.key', 'utf8')
@@ -16,3 +17,5 @@ app.get('/', (_req, res) => {
 const credentials = { key: privateKey, cert: certificate }
 const httpsServer = https.createServer(credentials, app)
 httpsServer.listen(443)
+console.clear()
+console.log(chalk.greenBright('HTTPS server listening on port 443'))

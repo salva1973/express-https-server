@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "chalk": "^4.1.0",
     "express": "^4.17.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
